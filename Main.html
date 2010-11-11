@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>Untitled Document</title>
+        <link type="text/css rel="stylesheet" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css">
+        <link type="text/css" rel="stylesheet" href="Main.css">
+        <!--[if lt IE 8]>
+            <script type="text/javascript">
+            IE7_PNG_SUFFIX=".png";
+            </script>
+            <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+        <![endif]-->
+        <script src="jquery-1.4.2.js" type="text/javascript">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js" type="text/javascript">
+        </script>
+        <script src="AIOpponent.js" type="text/javascript">
+        </script>
+        <script src="Checkers.js" type="text/javascript">
+        </script>
+        <script src="Main.js" type="text/javascript">
+        </script>
+        <script id="piecesTemplateBlack" type="text/html">
+            <div class="piece black">
+            </div>
+        </script>
+        <script id="piecesTemplateWhite" type="text/html">
+            <div class="piece white">
+            </div>
+        </script>
+    </head>
+    <body>
+        <div id="checkersContainer">
+            <center>
+                <h1 id="logoContainer"><span class="checkersMessage">Checkers</span></h1>
+                <div id="checkersBoard">
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div class="checkersSquare dark">
+                    </div>
+                    <div class="checkersSquare bright">
+                    </div>
+                    <div id="moveNotAllowed">
+                        <img alt="move not allowed" src="imgs/notAllowed.png">
+                    </div>
+                </div>
+                <div id="buttonContainer">
+                    <div id="newGameButton">
+                        New game
+                    </div>
+                </div>
+                <div id="notificationDiv">
+                    <div id="notificationContainer">
+                        <span class="notificationMessage">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span>
+                        <img alt="close" id="closeNotification" src="imgs/Close.png">
+                    </div>
+                </div>
+            </center>
+        </div>
+    </body>
+</html>

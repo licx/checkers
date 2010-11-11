@@ -1,0 +1,200 @@
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie&subset=latin);
+
+
+
+body,html {
+	background-color:#666666;
+}
+
+
+img{
+	vertical-align:middle;
+}
+.checkersMessage {
+	color:#5AADE6;
+	font-family:'Reenie Beanie';
+	font-size:37px;
+	vertical-align:middle;
+	text-shadow:0 0 1px #666666;
+	margin-left:10px;
+}
+
+#logoContainer{
+	background-color:#DDDDDD;
+	padding:10px;
+	position:relative; /*IE Compatibility */
+	-moz-border-radius:21px;
+	-webkit-border-radius:21px;
+	-moz-box-shadow:0 0 4px 2px #222222 inset;
+	-webkit-box-shadow:0 0 4px 2px #222222 inset;
+}
+
+#checkersContainer {
+    width: 480px;
+    height: 480px;
+    position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#checkersBoard {
+    border: 1px solid #999999;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+	margin-top:30px;
+	height:480px;
+	-moz-box-shadow:3px 2px 3px black;
+	-webkit-box-shadow:3px 2px 3px black;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Color=#000000, OffX=-3, OffY=3,direction=120,strength=5);
+
+}
+
+#checkersBoard .checkersSquare.bright {
+	 background: -moz-linear-gradient(center top , #eeeeee, #ffffff) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,center bottom,center top,from(#ffffff),to(#eeeeee));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#eeeeee',EndColorStr='#ffffff');
+    background-color: white;
+}
+
+#checkersBoard .checkersSquare.dark {
+    
+	
+	background: -moz-linear-gradient(center top , #222222, #333333) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,center bottom,center top,from(#333333),to(#222222));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#222222',EndColorStr='#333333');
+	
+	background-color: black;
+	
+}
+
+#checkersBoard .checkersSquare {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+
+
+#checkersBoard .piece {
+    width: 60px;
+    height: 60px;
+	position:absolute;
+	left:0px;
+	top:0px;
+
+}
+
+#checkersBoard .selected{
+	background-color:#074F7F;
+	-moz-box-shadow:0 0 10px 7px #5AADE6;
+	-webkit-box-shadow:0 0 10px 7px #5AADE6;
+
+}
+
+#checkersBoard .white {
+	background-image:url("imgs/PieceGreen.png");
+}
+
+#checkersBoard .black {
+	background-image:url("imgs/PieceBlue.png");
+
+}
+
+#checkersBoard .captured{
+	display:none;
+	filter:alpha(opacity=40);
+}
+
+#checkersBoard .kingWhite{
+	background-image:url("imgs/PieceGreenKing.png");
+}
+
+#checkersBoard .kingBlack{
+	background-image:url("imgs/PieceBlueKing.png");
+}
+
+#checkersBoard #moveNotAllowed{
+	width: 60px;
+    height: 60px;
+	position:absolute;
+	display:none;
+	z-index:10;
+}
+
+/* IE6 Compatibility */
+#checkersBoard #moveNotAllowed img
+{
+    width:60px;
+    height:60px;
+}
+
+#buttonContainer{
+	margin-bottom:100px;
+}
+
+
+#newGameButton{
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	background: -moz-linear-gradient(center top , #57aeea, #3d94d1) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear,center bottom,center top,from(#3d94d1),to(#57aeea));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#57aeea',EndColorStr='#3d94d1');
+	
+	background-color:lightBlue;
+	display:inline-block;
+	font-size:23px;
+	margin-top:40px;
+	padding:15px 45px;
+	vertical-align:middle;
+	font-family:Arial;
+	color:#fff;
+	border:1px solid #84C5F3;
+	text-shadow:0 0 3px #333333;
+	cursor:pointer;
+	-moz-box-shadow:0 0 8px 1px #888888;
+	-webkit-box-shadow:0 0 8px 1px #888888;
+	
+	
+
+}
+
+#notificationDiv{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+    display:none;
+}
+#notificationContainer{
+	background-color:#999999;
+	border:2px solid #BBBBBB;
+	font-family:arial;
+	font-size:25px;
+	left:-35px;
+	margin-top:30%;
+	position:relative;
+	width:100%;
+	padding:20px 50px 20px 14px;
+	-moz-border-radius:10px 10px 10px 10px;
+	-moz-box-shadow:3px 3px 10px 3px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	-webkit-box-shadow:3px 3px 10px 3px;
+}
+
+.notificationMessage{
+		margin:25px 39px;
+		display:inline-block;
+}
+
+#closeNotification{
+	height:37px;
+	position:absolute;
+	right:2px;
+	top:0;
+	cursor:pointer;
+	height:40px;
+	width:40px;
+}
