@@ -1,0 +1,9 @@
+This is a Javascript implementation of Checkers.
+
+You can try it at http://www.licciardi.net/checkers
+
+I took some code from http://developer.apple.com/safaridemos/checkers.php
+, in particular the Checkers Data Model and part of the AI.
+
+
+This App Works on IE6/IE7/IE8, Firefox, Chrome and Safari
