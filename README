@@ -1,6 +1,6 @@
 This is a Javascript implementation of Checkers.
 
-You can try it at <a href="http://www.licciardi.net/checkers">http://www.licciardi.net/checkers</a>
+You can try it at http://www.licciardi.net/checkers
 
 I took some code from http://developer.apple.com/safaridemos/checkers.php
 , in particular the Checkers Data Model and part of the AI.
